@@ -2,7 +2,7 @@ import turtle
 from mouse import Mouse
 
 # experimentally determined average of values with lots of deviation
-MM_PER_P = 71 / 2600
+MM_PER_P = 300 / 3830
 
 
 class Robot(turtle.Turtle):
@@ -40,5 +40,5 @@ class Robot(turtle.Turtle):
         self.setposition(x, y)
         radius = self.distance(self.start_x, self.start_y) * MM_PER_P
 
-        print('x: {} y: {}'.format(x * MM_PER_P, y * MM_PER_P))
+        print('x: {} y: {}'.format(x, y))
         print('\tdistance from the origin: {:.2f} mm'.format(radius))
